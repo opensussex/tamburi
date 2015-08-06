@@ -22,7 +22,7 @@ func main() {
 
 	file := wave.CreateFile(PCM, 1, 44100, 8)
 	//file.AppendSine(440, 5000, 20)
-	file.AppendByte(DrumSynth(2, 0.9995, 70.0, 0.002, 1.0, 0.9998, 0.5));
+	file.AppendByte(DrumSynth(4, 1, 200.0, 0.002, 1.0, 0.9998, 0.5));
 	err = file.Write(fd)
 	if err != nil {
 		println(err.Error())
